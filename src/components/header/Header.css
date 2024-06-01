@@ -1,0 +1,7 @@
+
+@media screen and (max-width:800px) {
+    
+    .big_screen{
+        display: none;
+    }
+}
