@@ -1,0 +1,21 @@
+
+
+/* Hiding mobile banners by default */
+.small_achieve {
+    display: none;
+  }
+  
+  /* Showing desktop banners by default */
+  .big_achieve{
+    display: flex;
+  }
+  
+  /* Media query for screen sizes below 650px */
+  @media (max-width: 700px) {
+    .small_achieve {
+      display: flex;
+    }
+    .big_achieve {
+      display: none;
+    }
+  }

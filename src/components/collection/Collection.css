@@ -1,0 +1,26 @@
+
+
+/* Hiding mobile banners by default */
+.small_collection {
+    display: none;
+  }
+  
+  /* Showing desktop banners by default */
+  .big_collection{
+    display: flex;
+  }
+  
+  /* Media query for screen sizes below 650px */
+  @media (max-width: 700px) {
+    .small_collection {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    
+
+
+    .big_collection {
+      display: none;
+    }
+  }

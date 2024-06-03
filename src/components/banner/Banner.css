@@ -1,0 +1,20 @@
+/* Hiding mobile banners by default */
+.mobile-banner {
+    display: none;
+  }
+  
+  /* Showing desktop banners by default */
+  .desktop-banner {
+    display: block;
+  }
+  
+  /* Media query for screen sizes below 650px */
+  @media (max-width: 650px) {
+    .mobile-banner {
+      display: block;
+    }
+    .desktop-banner {
+      display: none;
+    }
+  }
+  
