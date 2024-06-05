@@ -1,0 +1,17 @@
+.rec-arrow-left{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+.rec-arrow-right{
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+@media screen and (max-width:550px) {
+    .rec-arrow-left{
+        left: 30%;
+    }
+}
