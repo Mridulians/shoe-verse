@@ -1,32 +1,8 @@
-/* eslint-disable react/prop-types */
-// import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import StarTest from "../../assets/StarTest.png";
-import './Test.css'
-
-const CustomPrevArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", zIndex: 2 }}
-      onClick={onClick}
-    />
-  );
-};
-
-const CustomNextArrow = (props) => {
-  const { className, style, onClick } = props;
-  return (
-    <div
-      className={className}
-      style={{ ...style, display: "block", zIndex: 2 }}
-      onClick={onClick}
-    />
-  );
-};
+import "./Test.css";
 
 const TestimonialSlider = () => {
   const data = [
@@ -96,8 +72,6 @@ const TestimonialSlider = () => {
     slidesToScroll: 1,
     initialSlide: 0,
     arrows: true,
-    prevArrow: <CustomPrevArrow />,
-    nextArrow: <CustomNextArrow />,
     responsive: [
       {
         breakpoint: 1024,
@@ -109,7 +83,7 @@ const TestimonialSlider = () => {
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 800,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2,
@@ -117,7 +91,7 @@ const TestimonialSlider = () => {
         },
       },
       {
-        breakpoint: 480,
+        breakpoint: 550,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
@@ -132,7 +106,7 @@ const TestimonialSlider = () => {
         {data.map((item) => (
           <div
             key={item.id}
-            className="bg-gray-50 shadow-inner shadow-slate-500 mx-[2rem] p-[1rem] h-[300px]"
+            className="slide bg-gray-50 shadow-inner shadow-slate-500 p-[1rem] h-[300px]"
           >
             <div>
               <img src={item.img} alt="" className="w-[4rem]" />

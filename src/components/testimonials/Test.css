@@ -4,11 +4,32 @@
 }
 
 .slick-prev {
-  left: -25px; /* Adjust position if needed */
+  /* left: -25px; Adjust position if needed */
   z-index: 2; /* Ensure the arrow is above other content */
+  top: 120%;
+  left: 50%;
+  /* margin-top: 3rem; */
 }
 
 .slick-next {
-  right: -25px; /* Adjust position if needed */
+  /* right: -25px; Adjust position if needed */
   z-index: 2; /* Ensure the arrow is above other content */
+  top: 120%;
+  right: 45%;
+  /* margin-top: 3rem; */
+}
+
+@media screen and (max-width: 1050px) {
+  .slick-prev {
+    left: 45%;
+  }
+
+  /* .slide {
+    width: 300px !important;
+  } */
+}
+@media screen and (max-width: 450px) {
+  .slick-next {
+    right: 40%;
+  }
 }
