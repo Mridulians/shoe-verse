@@ -1,17 +1,14 @@
-.rec-arrow-left{
-    position: absolute;
-    top: 70%;
-    left: 40%;
+.slick-prev:before,
+.slick-next:before {
+  color: black; /* Change to desired color */
 }
 
-.rec-arrow-right{
-    position: absolute;
-    top: 70%;
-    left: 50%;
+.slick-prev {
+  left: -25px; /* Adjust position if needed */
+  z-index: 2; /* Ensure the arrow is above other content */
 }
 
-@media screen and (max-width:550px) {
-    .rec-arrow-left{
-        left: 30%;
-    }
+.slick-next {
+  right: -25px; /* Adjust position if needed */
+  z-index: 2; /* Ensure the arrow is above other content */
 }
