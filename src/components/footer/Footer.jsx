@@ -6,10 +6,35 @@ import LI from "../../assets/linkedin.png";
 import FooterImg from "../../assets/footerImg.png";
 import BulkMobile from "../../assets/bulk-Mobile.webp";
 import Bulk from "../../assets/bulk.jpg";
+import FashionMobile from "../../assets/fashion_mobile.webp";
+import Fashion from "../../assets/fashion_desktop.jpg";
+import FeaturedMobile from "../../assets/Featured_mobile.webp";
+import Featured from "../../assets/Featured_desktop.webp";
+import Video from "../videoSlider/Video";
 
 const Footer = () => {
   return (
     <>
+      <div>
+        <img src={Featured} alt="" className="hidden md:block cursor-pointer" />
+        <img
+          src={FeaturedMobile}
+          alt=""
+          className="block md:hidden cursor-pointer"
+        />
+      </div>
+
+      <div>
+        <img src={Fashion} alt="" className="hidden md:block cursor-pointer" />
+        <img
+          src={FashionMobile}
+          alt=""
+          className="block md:hidden cursor-pointer"
+        />
+      </div>
+
+      <Video />
+
       <div>
         <img src={Bulk} alt="" className="hidden md:block cursor-pointer" />
         <img
