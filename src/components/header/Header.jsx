@@ -6,12 +6,14 @@ import DArrow from "../../assets/down.png";
 import Ham from "../../assets/hamburger.png";
 import Cancel from "../../assets/cancel.png";
 import Cross from "../../assets/cross.png";
-import Insta from '../../assets/instagram.png'
-import Fb from '../../assets/facebook.png'
-import X from '../../assets/twitter.png'
-import LI from '../../assets/linkedin.png'
+import Insta from "../../assets/instagram.png";
+import Fb from "../../assets/facebook.png";
+import X from "../../assets/twitter.png";
+import LI from "../../assets/linkedin.png";
 
 import "./Header.css";
+import SubHeader from "./SubHeader";
+import SubList from "./SubList";
 // import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -38,16 +40,130 @@ const Header = () => {
           <img src={Logo} alt="" className="h-[90px]" />
         </div>
 
-        <div className="list-none flex flex-row justify-between items-center w-[40%]">
-          <li className="flex flex-row justify-center items-center gap-[10px]">
-            SHOES <img src={DArrow} alt="" className="w-[1rem]" />
-          </li>
-          <li className="flex flex-row justify-center items-center gap-[10px]">
-            SLIPPERS <img src={DArrow} alt="" className="w-[1rem]" />
-          </li>
-          <li className="flex flex-row justify-center items-center gap-[10px]">
-            ABOUT US <img src={DArrow} alt="" className="w-[1rem]" />
-          </li>
+        <div className="list-none flex flex-row justify-between items-center w-[55%] xl:w-[40%]">
+          <div className="relative group">
+            <li className="flex flex-row justify-center items-center gap-[10px]">
+              MEN <img src={DArrow} alt="" className="w-[1rem]" />
+            </li>
+
+            <div className="absolute hidden group-hover:flex flex-col justify-center w-max bg-white p-[2rem] lg:p-[4rem] gap-[5rem] shadow-lg z-10 left-[-10rem] xl:left-0">
+              <div className="flex flex-row justify-center gap-[5rem]">
+                <div>
+                  <SubList
+                    title="SNEAKERS"
+                    item1="Casuals"
+                    item2="Chunky"
+                    item3="Formal"
+                    item4="Retro"
+                  />
+                </div>
+                <div>
+                  <SubList
+                    title="Slides And Sandals"
+                    item1="Daily Use"
+                    item2="Trendy"
+                    item3="Casuals"
+                  />
+                </div>
+                <div>
+                  <SubList
+                    title="Flip Flops"
+                    item1="Daily Use"
+                    item2="Extra Soft"
+                    item3="Trendy"
+                  />
+                </div>
+              </div>
+              <SubHeader />
+            </div>
+          </div>
+
+          <div className="relative group">
+            <li className="flex flex-row justify-center items-center gap-[10px]">
+              WOMEN <img src={DArrow} alt="" className="w-[1rem]" />
+            </li>
+
+            <div className="absolute hidden group-hover:flex flex-col justify-center w-max bg-white p-[2rem] lg:p-[4rem] gap-[5rem] shadow-lg z-10 left-[-15rem] xl:left-0">
+              <div className="flex flex-row justify-center gap-[5rem]">
+                <div>
+                  <SubList
+                    title="SNEAKERS"
+                    item1="Casuals"
+                    item2="Chunky"
+                    item3="Formal"
+                    item4="Retro"
+                  />
+                </div>
+                <div>
+                  <SubList
+                    title="Slides And Sandals"
+                    item1="Daily Use"
+                    item2="Trendy"
+                    item3="Casuals"
+                  />
+                </div>
+                <div>
+                  <SubList
+                    title="Flip Flops"
+                    item1="Daily Use"
+                    item2="Extra Soft"
+                    item3="Trendy"
+                  />
+                </div>
+              </div>
+              <SubHeader />
+            </div>
+          </div>
+
+          <div className="relative group">
+            <li className="flex flex-row justify-center items-center gap-[10px]">
+              OFFERS <img src={DArrow} alt="" className="w-[1rem]" />
+            </li>
+
+            <div className="absolute hidden group-hover:flex flex-col justify-center w-max bg-white p-[2rem] lg:p-[4rem] gap-[5rem] shadow-lg z-10 left-[-15rem] xl:left-0">
+              <div className="flex flex-row gap-[5rem] justify-center">
+                <div>
+                  <SubList
+                    title="Price"
+                    item1="Under Rs. 999"
+                    item2="Under Rs. 1499"
+                    item3="Under Rs. 1999"
+                    item4="Under Rs. 3999"
+                  />
+                </div>
+                <div>
+                  <SubList
+                    title="Discount"
+                    item1="Upto 35% OFF"
+                    item2="Upto 45% OFF"
+                    item3="Upto 55% OFF"
+                    item4="Upto 65% OFF"
+                  />
+                </div>
+              </div>
+
+              <SubHeader />
+            </div>
+          </div>
+
+          <div className="relative group">
+            <li className="flex flex-row justify-center items-center gap-[10px]">
+              ABOUT US <img src={DArrow} alt="" className="w-[1rem]" />
+            </li>
+
+            <div className="absolute hidden group-hover:flex flex-row justify-center w-max bg-white p-[2rem] lg:p-[4rem] gap-[5rem] shadow-lg z-10 left-[-30rem]">
+              <div>
+                <SubList
+                  item1="Our Journey"
+                  item2="Brand Impact"
+                  item3="Why Mriduls"
+                  item4="Gift Card"
+                />
+              </div>
+
+              <SubHeader />
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-row justify-end gap-[3rem] items-center w-[20%]">
@@ -60,7 +176,7 @@ const Header = () => {
           </div>
 
           <div className="flex">
-            <img src={Cart} alt="" className="h-[25px]"/> <sub>2</sub>
+            <img src={Cart} alt="" className="h-[25px]" /> <sub>2</sub>
           </div>
         </div>
       </nav>
@@ -92,20 +208,25 @@ const Header = () => {
           />
 
           <div className="flex flex-col items-center justify-center list-none w-[100%]">
-            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">SHOES</li>
-            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">SLIPPERS</li>
-            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">ABOUT US</li>
-            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">HELP</li>
+            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">
+              SHOES
+            </li>
+            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">
+              SLIPPERS
+            </li>
+            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">
+              ABOUT US
+            </li>
+            <li className="py-[20px] px-[0px] font-sans font-semibold w-[100%] text-center hover:bg-sky-500 hover:text-white">
+              HELP
+            </li>
           </div>
 
-
           <div className="flex flex-row justify-center items-center w-[100%] gap-[2rem] py-[4rem] px-[0rem]">
-
-            <img src={Insta} alt=""  className="w-[25px] h-[25px]"/>
-            <img src={Fb} alt=""  className="w-[25px] h-[25px]"/>
+            <img src={Insta} alt="" className="w-[25px] h-[25px]" />
+            <img src={Fb} alt="" className="w-[25px] h-[25px]" />
             <img src={X} alt="" className="w-[25px] h-[25px]" />
-            <img src={LI} alt=""  className="w-[25px] h-[25px]"/>
-
+            <img src={LI} alt="" className="w-[25px] h-[25px]" />
           </div>
         </div>
       )}
