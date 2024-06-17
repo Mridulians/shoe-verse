@@ -7,46 +7,79 @@ import Cate5 from "../../assets/cate5.webp";
 import Cate6 from "../../assets/cate6.webp";
 import Cate7 from "../../assets/cate7.webp";
 import Cate8 from "../../assets/cate8.webp";
-
+import Tilt from "react-parallax-tilt";
 import Right from "../../assets/Right.png";
 import WhiteArrow from "../../assets/white-arrow.png";
 import "./Categories.css";
 
 const Categories = () => {
   return (
-    <div className="mb-[10rem]">
+    <div>
       <h2 className="text-[1.5rem] md:text-[2rem] font-bold font-sans text-center mb-[1rem]">
         Explore Our Categories
       </h2>
+      <div className="big_category flex-row gap-[2rem] justify-center items-center">
+        <Tilt className="w-[20%]">
+          <img src={Cate1} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[20%]">
+          <img src={Cate2} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[20%]">
+          <img src={Cate3} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[20%]">
+          <img src={Cate4} alt="" className="cursor-pointer" />
+        </Tilt>
+      </div>
 
       <div className="big_category flex-row gap-[2rem] justify-center items-center">
-        <img src={Cate1} alt="" className="w-[20%] cursor-pointer" />
-        <img src={Cate2} alt="" className="w-[20%] cursor-pointer" />
-        <img src={Cate3} alt="" className="w-[20%] cursor-pointer" />
-        <img src={Cate4} alt="" className="w-[20%] cursor-pointer" />
-      </div>
-      <div className="big_category flex-row gap-[2rem] justify-center items-center">
-        <img src={Cate5} alt="" className="w-[20%] cursor-pointer" />
-        <img src={Cate6} alt="" className="w-[20%] cursor-pointer" />
-        <img src={Cate7} alt="" className="w-[20%] cursor-pointer" />
-        <img src={Cate8} alt="" className="w-[20%] cursor-pointer" />
+        <Tilt className="w-[20%]">
+          {" "}
+          <img src={Cate5} alt="" className="cursor-pointer" />{" "}
+        </Tilt>
+        <Tilt className="w-[20%]">
+          <img src={Cate6} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[20%]">
+          <img src={Cate7} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[20%]">
+          <img src={Cate8} alt="" className="cursor-pointer" />
+        </Tilt>
       </div>
 
       <div className="small_category flex-row gap-[2rem] justify-center items-center">
-        <img src={Cate1} alt="" className="w-[40%] cursor-pointer" />
-        <img src={Cate2} alt="" className="w-[40%] cursor-pointer" />
+        <Tilt className="w-[40%]">
+          <img src={Cate1} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[40%]">
+          <img src={Cate2} alt="" className="cursor-pointer" />
+        </Tilt>
       </div>
       <div className="small_category flex-row gap-[2rem] justify-center items-center">
-        <img src={Cate3} alt="" className="w-[40%] cursor-pointer" />
-        <img src={Cate4} alt="" className="w-[40%] cursor-pointer" />
+      <Tilt className="w-[40%]">
+          <img src={Cate3} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[40%]">
+          <img src={Cate4} alt="" className="cursor-pointer" />
+        </Tilt>
       </div>
       <div className="small_category flex-row gap-[2rem] justify-center items-center">
-        <img src={Cate5} alt="" className="w-[40%] cursor-pointer" />
-        <img src={Cate6} alt="" className="w-[40%] cursor-pointer" />
+      <Tilt className="w-[40%]">
+          <img src={Cate5} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[40%]">
+          <img src={Cate6} alt="" className="cursor-pointer" />
+        </Tilt>
       </div>
       <div className="small_category flex-row gap-[2rem] justify-center items-center">
-        <img src={Cate7} alt="" className="w-[40%] cursor-pointer" />
-        <img src={Cate8} alt="" className="w-[40%] cursor-pointer" />
+      <Tilt className="w-[40%]">
+          <img src={Cate7} alt="" className="cursor-pointer" />
+        </Tilt>
+        <Tilt className="w-[40%]">
+          <img src={Cate8} alt="" className="cursor-pointer" />
+        </Tilt>
       </div>
 
       <button className="flex flex-row justify-center items-center my-[3rem] mx-auto py-[0.5rem] md:py-[1rem] px-[1rem] md:px-[2rem] gap-[1rem] border-2 border-solid border-gray-600 relative overflow-hidden group">

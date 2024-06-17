@@ -35,7 +35,7 @@ const Header = () => {
   };
   return (
     <>
-      <nav className="hidden md:flex justify-between items-center flex-row bg-zinc-500 px-[2rem] h-[90px]">
+      <nav className="hidden md:flex justify-between items-center flex-row bg-zinc-200 px-[2rem] h-[90px]">
         <div className="w-[20%]">
           <img src={Logo} alt="" className="h-[90px]" />
         </div>
@@ -168,7 +168,7 @@ const Header = () => {
 
         <div className="flex flex-row justify-end gap-[3rem] items-center w-[20%]">
           <div
-            className="flex flex-row items-center gap-[10px]"
+            className="flex flex-row items-center gap-[10px] cursor-pointer"
             onClick={onSearch}
           >
             <FaSearch className="opacity-[0.6]" />
@@ -181,7 +181,7 @@ const Header = () => {
         </div>
       </nav>
 
-      <nav className="flex md:hidden items-center justify-between px-[1rem] py-[10px]">
+      <nav className="flex md:hidden items-center justify-between px-[1rem] py-[10px] bg-zinc-200">
         <img
           src={Ham}
           alt=""
